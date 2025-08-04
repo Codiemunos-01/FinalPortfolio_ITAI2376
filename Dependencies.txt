@@ -1,0 +1,54 @@
+# NLTK data
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('vader_lexicon')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('punkt_tab')
+nltk.download('averaged_perceptron_tagger_eng'
+# Import libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from wordcloud import WordCloud
+import plotly.express as px
+import plotly.graph_objects as go
+from collections import Counter, defaultdict
+import re
+import warnings
+warnings.filterwarnings('ignore')
+
+# NLP Libraries
+import spacy
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.stem import WordNetLemmatizer
+from nltk.sentiment import SentimentIntensityAnalyzer
+from nltk.tag import pos_tag
+
+# Scikit-learn for machine learning
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from sklearn.pipeline import Pipeline
+
+#import os
+!pip install kaggle
+#inequalty in education file from kaggle
+import google collab files
+# Google Generative AI library
+!pip install google-generativeai
+
+#The library
+import google.generativeai as genai
+from google.colab import userdata
+
+# API key
+GOOGLE_API_KEY = userdata.get('GOOGLE_API_KEY')
+genai.configure(api_key=GOOGLE_API_KEY) 
